@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b4b4b4;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  margin: 1rem;
+}
+
+div {
+  border-radius: 7px;
+}
+
+#sidebar-info {
+  background-color: #e7e7e7;
+  min-height: 250px;
+  width: calc(25% - 1rem);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3764705882);
+  position: fixed;
+}
+#sidebar-info h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: #3a3a3a;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+#sidebar-info h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #353535;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+#sidebar-info p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem;
+  text-indent: 10px;
+}
+
+#text-principal {
+  margin: 0 auto;
+  background-color: #e7e7e7;
+  min-height: 100vh;
+  width: calc(50% - 1rem);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3764705882);
+  padding: 1rem 0;
+}
+#text-principal h1 {
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+#text-principal p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 30px;
+  margin: 0 2.5rem;
+  text-align: justify;
+}
+#text-principal .last-p {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  text-align: justify;
+}
+#text-principal #footer {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-indent: 0;
+  text-align: left;
+}
+
+#sidebar-github {
+  min-height: 250px;
+  width: calc(25% - 1rem);
+  background-color: #e7e7e7;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3764705882);
+  position: fixed;
+  right: 1rem;
+}
+#sidebar-github #icone-github {
+  font-size: 3rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#sidebar-github p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+#sidebar-github p a {
+  font-weight: 500;
+  color: #0077ff;
+  transition: 0.4s;
+}
+#sidebar-github p a:hover {
+  color: #0054b4;
+}
+#sidebar-github .p-link {
+  margin: 0.5rem;
+  text-align: left;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#sidebar-github h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: #3a3a3a;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  #text-principal {
+    min-height: 100vh;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+  }
+  #text-principal p {
+    margin: 0.9rem;
+  }
+  #text-principal .last-p {
+    text-align: left;
+  }
+  #sidebar-info {
+    position: relative;
+    width: 100%;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0.1rem 0;
+    margin: 0 0 1rem 0;
+  }
+  #sidebar-github {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .container {
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+}/*# sourceMappingURL=styles.css.map */

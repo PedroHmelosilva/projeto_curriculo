@@ -1,0 +1,95 @@
+@use 'variables'
+@use 'mixins'
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    @include mixins.body
+    position: relative
+
+.container
+    display: flex
+    margin: 1rem
+
+div
+    border-radius: 7px
+
+#sidebar-info
+    @include mixins.info-sidebar
+
+    h2
+        @include mixins.titleh2
+
+    h4
+        @include mixins.titleh4
+
+    p
+        @include mixins.text-info
+
+#text-principal
+    @include mixins.text-principal
+
+#sidebar-github
+    @include mixins.github-sidebar
+
+    #icone-github
+        font-size: 3rem
+        padding: 1rem 0
+        display: flex
+        justify-content: center
+        margin: auto
+
+    p
+        @include mixins.text-github
+
+    .p-link
+        @include mixins.text-github-link
+
+    h2
+        @include mixins.titleh2
+        border-top: 1px solid #ccc
+        padding-top: 1.5rem
+        margin-bottom: 1rem
+
+@media (max-width: 600px)
+    #text-principal
+        min-height: 100vh
+        min-width: 100%
+        max-width: 100%
+        border-radius: 0
+        box-shadow: none
+        margin-bottom: 1rem
+        padding: 1rem 0
+
+        p
+            margin: .9rem
+
+        .last-p
+            text-align: left
+
+    #sidebar-info
+        position: relative
+        width: 100%
+        right: 0
+        left: 0
+        border-radius: 0
+        box-shadow: none
+        padding: .1rem 0
+        margin: 0 0 1rem 0
+
+    #sidebar-github
+        position: absolute
+        width: 100%
+        right: 0
+        left: 0
+        border-radius: 0
+        box-shadow: none
+
+    .container
+        display: block
+        padding: 0
+        margin: 0
+        height: 100vh
