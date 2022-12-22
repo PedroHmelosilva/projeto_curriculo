@@ -24,10 +24,19 @@
 
 @mixin info-sidebar
     background-color: variables.$divs-color
-    min-height: 250px
+    min-height: 200px
     width: calc( 25% - 1rem )
     box-shadow: 1px 1px 3px #00000060
-    position: fixed  
+    position: fixed
+
+    .row
+        display: flex
+        align-items: center
+
+    .social-media
+        display: flex
+        margin-left: 1rem
+        flex-direction: column
 
 @mixin text-principal
     margin: 0 auto
@@ -49,6 +58,7 @@
         text-indent: 30px
         margin: 0 2.5rem
         text-align: justify
+        line-height: 1.7rem
 
     .last-p
         border-bottom: 1px solid #ccc
@@ -84,6 +94,7 @@
         font-weight: 500
         color: #0077ff
         transition: .4s
+        text-decoration: none
 
         &:hover
             color: #0054b4
